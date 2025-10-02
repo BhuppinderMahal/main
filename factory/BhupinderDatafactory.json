@@ -1,0 +1,9 @@
+{
+	"name": "BhupinderDatafactory",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "3db6e160-244f-41cd-bbb6-8f7a78eabf28",
+		"tenantId": "b51c17dc-3e4f-4409-9660-f66815523d99"
+	}
+}
