@@ -1,0 +1,34 @@
+{
+	"name": "config_file",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "PrimaryKey_config.json",
+				"folderPath": "input",
+				"fileSystem": "governance"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"TableName": {
+					"type": "string"
+				},
+				"PrimaryKey": {
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
